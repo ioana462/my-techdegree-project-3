@@ -97,6 +97,7 @@ select {
   font-size: 12px;
   color: #9da3a8;
   text-align: end;
+  overflow: visible;
 }
 
 select {
