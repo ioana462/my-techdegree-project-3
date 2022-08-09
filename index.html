@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="normalize.css" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>THE CODE REVIEW</title>
+  </head>
+  <body>
+    <header>
+      <h1>THE CODE REVIEW</h1>
+      <div class="signup">
+        <span>Signup for our newsletter</span>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+      </div>
+    </header>
+    <form>
+      <fieldset class="contact-info">
+        <legend class="info">Contact Information</legend>
+        <div class="field-control">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="user-name" placeholder="Required" required />
+        </div>
+        <div class="field-control">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="user-email" placeholder="Required" required />
+        </div>
+        <div class="field-control">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="user-phone" />
+        </div>
+        <div class="field-control">
+          <label for="street">Street Address</label>
+          <input type="text" id="street" name="user-street" />
+        </div>
+        <div class="field-control">
+          <label for="city">City</label>
+          <input type="text" id="city" name="user-city" />
+        </div>
+        <div class="field-control">
+          <label for="state">State</label>
+          <div class="dropdown">
+            <select id="state" name="user_state">
+              <option value=" ">Choose State</option>
+              <optgroup label="Europe">
+                <option value="greece">Greece</option>
+                <option value="romania">Romania</option>
+                <option value="germany">Germany</option>
+                <option value="italy">Italy</option>
+                <option value="spain">Spain</option>
+                <option value="france">France</option>
+              </optgroup>
+              <optgroup label="Asia">
+                <option value="china">China</option>
+                <option value="india">India</option>
+                <option value="israel">Israel</option>
+                <option value="japan">Japan</option>
+                <option value="nepal">Nepal</option>
+                <option value="egypt">Egypt</option>
+              </optgroup>
+              <optgroup label="South America">
+                <option value="argentina">Argentina</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="brazil">Brazil</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="peru">Peru</option>
+              </optgroup>
+              <optgroup label="North  America">
+                <option value="canada">Canada</option>
+                <option value="mexico">Mexico</option>
+                <option value="usa">USA</option>
+                <option value="bahamas">The Bahamas</option>
+                <option value="barbados">Barbados</option>
+                <option value="grenada">Grenada</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <div class="field-control">
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" name="user-zip" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="info">Newsletter</legend>
+        <label>Select the newslater you would like to recive</label>
+        <div class="newsletter">
+          <input type="checkbox" id="html" value="news_html" name="user_news" /><label class="news" for="html">HTML News</label><br />
+          <input type="checkbox" id="css" value="css_html" name="user_news" /><label class="news" for="css">CSS News</label><br />
+          <input type="checkbox" id="javascript" value="javascript_html" name="user_news" /><label class="news" for="javascript"
+            >Javascript News</label
+          ><br />
+        </div>
+        <label>Newsletter format</label>
+        <div class="newsletter">
+          <input type="radio" id="html_format" value="type_html" name="user_format" /><label class="news" for="html_format">HTML</label><br />
+          <input type="radio" id="plain_format" value="type_plain" name="user_format" /><label class="news" for="plain_format">Plain text</label
+          ><br />
+        </div>
+        <label for="other_topics">Other topics you'd like to hear about</label>
+        <textarea id="other_topics" name="other_topics" rows="6"> </textarea>
+      </fieldset>
+      <fieldset>
+        <button class="button">Sign Up</button>
+        <p class="copyright"><i>Copyright The Code Review</i></p>
+      </fieldset>
+    </form>
+  </body>
+</html>
