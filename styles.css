@@ -100,6 +100,11 @@ select {
   overflow: visible;
 }
 
+textarea::placeholder {
+  text-align: start;
+  padding: 5px;
+}
+
 select {
   padding: 20px;
   color: #9da3a8;
